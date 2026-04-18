@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from perception_msgs/msg/Detection.msg
+// generated code does not contain a copyright notice
+
+
+module perception_msgs {
+  module msg {
+    struct Detection {
+      string class_name;
+
+      float confidence;
+
+      int32 x;
+
+      int32 y;
+
+      int32 width;
+
+      int32 height;
+    };
+  };
+};

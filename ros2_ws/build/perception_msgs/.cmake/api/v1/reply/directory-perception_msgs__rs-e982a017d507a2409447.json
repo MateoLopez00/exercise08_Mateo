@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "perception_msgs__rs",
+		"source" : "/root/ros2_ws/build/perception_msgs/perception_msgs__rs"
+	}
+}

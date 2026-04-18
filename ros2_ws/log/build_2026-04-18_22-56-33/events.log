@@ -1,0 +1,296 @@
+[0.000000] (-) TimerEvent: {}
+[0.000307] (perception_msgs) JobQueued: {'identifier': 'perception_msgs', 'dependencies': OrderedDict()}
+[0.000357] (perception_msgs) JobStarted: {'identifier': 'perception_msgs'}
+[0.005670] (perception_msgs) JobProgress: {'identifier': 'perception_msgs', 'progress': 'cmake'}
+[0.006171] (perception_msgs) JobProgress: {'identifier': 'perception_msgs', 'progress': 'build'}
+[0.006588] (perception_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ros2_ws/build/perception_msgs', '--', '-j12', '-l12'], 'cwd': '/root/ros2_ws/build/perception_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/root/PX4-Autopilot/Tools/simulation/gz/models:/opt/ros/jazzy/share', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'e9baeb4f9ac3', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/root', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'PX4_GZ_WORLD': 'perception_world', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'PX4_DIR': '/root/PX4-Autopilot', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'DEBIAN_FRONTEND': 'noninteractive', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/root/ros2_ws/build/perception_msgs', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.025656] (perception_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.099737] (-) TimerEvent: {}
+[0.156925] (perception_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[0.163004] (perception_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.184371] (perception_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.199993] (-) TimerEvent: {}
+[0.216359] (perception_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[0.220317] (perception_msgs) StdoutLine: {'line': b'-- Found std_msgs: 5.3.7 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[0.235594] (perception_msgs) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.7 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[0.300135] (-) TimerEvent: {}
+[0.400488] (-) TimerEvent: {}
+[0.500975] (-) TimerEvent: {}
+[0.601463] (-) TimerEvent: {}
+[0.601773] (perception_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[0.701610] (-) TimerEvent: {}
+[0.801910] (-) TimerEvent: {}
+[0.855851] (perception_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.902096] (-) TimerEvent: {}
+[1.002554] (-) TimerEvent: {}
+[1.102844] (-) TimerEvent: {}
+[1.182993] (perception_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.187320] (perception_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[1.202969] (-) TimerEvent: {}
+[1.259950] (perception_msgs) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[1.303636] (-) TimerEvent: {}
+[1.404069] (-) TimerEvent: {}
+[1.489584] (perception_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[1.504360] (-) TimerEvent: {}
+[1.540416] (perception_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.550610] (perception_msgs) StdoutLine: {'line': b'-- Configuring done (1.5s)\n'}
+[1.592442] (perception_msgs) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[1.603599] (perception_msgs) StdoutLine: {'line': b'-- Build files have been written to: /root/ros2_ws/build/perception_msgs\n'}
+[1.604494] (-) TimerEvent: {}
+[1.626742] (perception_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[1.627279] (perception_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[1.631995] (perception_msgs) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_copy_perception_msgs\n'}
+[1.704771] (-) TimerEvent: {}
+[1.736134] (perception_msgs) StdoutLine: {'line': b'[  4%] Built target perception_msgs__rosidl_generator_type_description\n'}
+[1.744289] (perception_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.744486] (perception_msgs) StdoutLine: {'line': b'[  6%] Built target perception_msgs__rs\n'}
+[1.749010] (perception_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[1.749828] (perception_msgs) StdoutLine: {'line': b'creating perception_msgs.egg-info\n'}
+[1.750956] (perception_msgs) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.805127] (-) TimerEvent: {}
+[1.888743] (perception_msgs) StdoutLine: {'line': b'[  8%] Built target perception_msgs__cpp\n'}
+[1.901075] (perception_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/perception_msgs__rosidl_generator_c.dir/rosidl_generator_c/perception_msgs/msg/detail/detection__description.c.o\x1b[0m\n'}
+[1.901401] (perception_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/perception_msgs__rosidl_generator_c.dir/rosidl_generator_c/perception_msgs/msg/detail/detection__functions.c.o\x1b[0m\n'}
+[1.901835] (perception_msgs) StdoutLine: {'line': b'writing perception_msgs.egg-info/PKG-INFO\n'}
+[1.902091] (perception_msgs) StdoutLine: {'line': b'writing dependency_links to perception_msgs.egg-info/dependency_links.txt\n'}
+[1.902336] (perception_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/perception_msgs__rosidl_generator_c.dir/rosidl_generator_c/perception_msgs/msg/detail/detection_array__description.c.o\x1b[0m\n'}
+[1.902407] (perception_msgs) StdoutLine: {'line': b'writing top-level names to perception_msgs.egg-info/top_level.txt\n'}
+[1.902553] (perception_msgs) StdoutLine: {'line': b"writing manifest file 'perception_msgs.egg-info/SOURCES.txt'\n"}
+[1.902660] (perception_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/perception_msgs__rosidl_generator_c.dir/rosidl_generator_c/perception_msgs/msg/detail/detection__type_support.c.o\x1b[0m\n'}
+[1.902852] (perception_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/perception_msgs__rosidl_generator_c.dir/rosidl_generator_c/perception_msgs/msg/detail/detection_array__functions.c.o\x1b[0m\n'}
+[1.902953] (perception_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object CMakeFiles/perception_msgs__rosidl_generator_c.dir/rosidl_generator_c/perception_msgs/msg/detail/detection_array__type_support.c.o\x1b[0m\n'}
+[1.905467] (-) TimerEvent: {}
+[1.928701] (perception_msgs) StdoutLine: {'line': b"reading manifest file 'perception_msgs.egg-info/SOURCES.txt'\n"}
+[1.929135] (perception_msgs) StdoutLine: {'line': b"writing manifest file 'perception_msgs.egg-info/SOURCES.txt'\n"}
+[1.944747] (perception_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32m\x1b[1mLinking C shared library libperception_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[1.946529] (perception_msgs) StdoutLine: {'line': b'[ 24%] Built target ament_cmake_python_build_perception_msgs_egg\n'}
+[1.968470] (perception_msgs) StdoutLine: {'line': b'[ 24%] Built target perception_msgs__rosidl_generator_c\n'}
+[1.975429] (perception_msgs) StdoutLine: {'line': b'[ 26%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.975704] (perception_msgs) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.975881] (perception_msgs) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.976469] (perception_msgs) StdoutLine: {'line': b'[ 33%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.976789] (perception_msgs) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[1.976896] (perception_msgs) StdoutLine: {'line': b'[ 37%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.005858] (-) TimerEvent: {}
+[2.098218] (perception_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/perception_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/perception_msgs/msg/detection_array__type_support.cpp.o\x1b[0m\n'}
+[2.098492] (perception_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/perception_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/perception_msgs/msg/detection__type_support.cpp.o\x1b[0m\n'}
+[2.098618] (perception_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/perception_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/perception_msgs/msg/detection__type_support.cpp.o\x1b[0m\n'}
+[2.098720] (perception_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/perception_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/perception_msgs/msg/detection_array__type_support.cpp.o\x1b[0m\n'}
+[2.106138] (-) TimerEvent: {}
+[2.106628] (perception_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/perception_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/perception_msgs/msg/detail/detection__type_support.cpp.o\x1b[0m\n'}
+[2.106955] (perception_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/perception_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/perception_msgs/msg/detail/detection_array__type_support.cpp.o\x1b[0m\n'}
+[2.107155] (perception_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/perception_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/perception_msgs/msg/detail/detection__type_support.c.o\x1b[0m\n'}
+[2.107273] (perception_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding C object CMakeFiles/perception_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/perception_msgs/msg/detail/detection_array__type_support.c.o\x1b[0m\n'}
+[2.122212] (perception_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/perception_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/perception_msgs/msg/detail/dds_fastrtps/detection__type_support.cpp.o\x1b[0m\n'}
+[2.123351] (perception_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/perception_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/perception_msgs/msg/detail/dds_fastrtps/detection_array__type_support.cpp.o\x1b[0m\n'}
+[2.127081] (perception_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/perception_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/perception_msgs/msg/detail/detection__type_support_c.cpp.o\x1b[0m\n'}
+[2.128039] (perception_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/perception_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/perception_msgs/msg/detail/detection_array__type_support_c.cpp.o\x1b[0m\n'}
+[2.136954] (perception_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking C shared library libperception_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.137505] (perception_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX shared library libperception_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.164899] (perception_msgs) StdoutLine: {'line': b'[ 68%] Built target perception_msgs__rosidl_typesupport_introspection_c\n'}
+[2.167099] (perception_msgs) StdoutLine: {'line': b'[ 68%] Built target perception_msgs__rosidl_typesupport_c\n'}
+[2.206296] (-) TimerEvent: {}
+[2.306587] (-) TimerEvent: {}
+[2.308337] (perception_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libperception_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.335556] (perception_msgs) StdoutLine: {'line': b'[ 71%] Built target perception_msgs__rosidl_typesupport_cpp\n'}
+[2.341322] (perception_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking CXX shared library libperception_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[2.381683] (perception_msgs) StdoutLine: {'line': b'[ 73%] Built target perception_msgs__rosidl_typesupport_introspection_cpp\n'}
+[2.398782] (perception_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library libperception_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[2.406789] (-) TimerEvent: {}
+[2.409649] (perception_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libperception_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[2.439963] (perception_msgs) StdoutLine: {'line': b'[ 77%] Built target perception_msgs__rosidl_typesupport_fastrtps_c\n'}
+[2.448946] (perception_msgs) StdoutLine: {'line': b'[ 77%] Built target perception_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[2.461153] (perception_msgs) StdoutLine: {'line': b'[ 77%] Built target perception_msgs\n'}
+[2.473839] (perception_msgs) StdoutLine: {'line': b'[ 80%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[2.506988] (-) TimerEvent: {}
+[2.609229] (-) TimerEvent: {}
+[2.630696] (perception_msgs) StdoutLine: {'line': b'[ 80%] Built target perception_msgs__py\n'}
+[2.642833] (perception_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/perception_msgs__rosidl_generator_py.dir/rosidl_generator_py/perception_msgs/msg/_detection_s.c.o\x1b[0m\n'}
+[2.643037] (perception_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/perception_msgs__rosidl_generator_py.dir/rosidl_generator_py/perception_msgs/msg/_detection_array_s.c.o\x1b[0m\n'}
+[2.709415] (-) TimerEvent: {}
+[2.752656] (perception_msgs) StdoutLine: {'line': b'[ 86%] \x1b[32m\x1b[1mLinking C shared library libperception_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[2.778710] (perception_msgs) StdoutLine: {'line': b'[ 86%] Built target perception_msgs__rosidl_generator_py\n'}
+[2.791512] (perception_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/perception_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/perception_msgs/_perception_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[2.791737] (perception_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/perception_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/perception_msgs/_perception_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[2.791779] (perception_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/perception_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/perception_msgs/_perception_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[2.809577] (-) TimerEvent: {}
+[2.844451] (perception_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/perception_msgs/perception_msgs_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.844664] (perception_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/perception_msgs/perception_msgs_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.845584] (perception_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/perception_msgs/perception_msgs_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[2.862987] (perception_msgs) StdoutLine: {'line': b'[100%] Built target perception_msgs_s__rosidl_typesupport_introspection_c\n'}
+[2.863200] (perception_msgs) StdoutLine: {'line': b'[100%] Built target perception_msgs_s__rosidl_typesupport_c\n'}
+[2.863452] (perception_msgs) StdoutLine: {'line': b'[100%] Built target perception_msgs_s__rosidl_typesupport_fastrtps_c\n'}
+[2.871112] (perception_msgs) CommandEnded: {'returncode': 0}
+[2.871811] (perception_msgs) JobProgress: {'identifier': 'perception_msgs', 'progress': 'install'}
+[2.877212] (perception_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/ros2_ws/build/perception_msgs'], 'cwd': '/root/ros2_ws/build/perception_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/root/PX4-Autopilot/Tools/simulation/gz/models:/opt/ros/jazzy/share', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'e9baeb4f9ac3', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/root', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'PX4_GZ_WORLD': 'perception_world', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'PX4_DIR': '/root/PX4-Autopilot', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'DEBIAN_FRONTEND': 'noninteractive', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/root/ros2_ws/build/perception_msgs', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[2.882296] (perception_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.882466] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/ament_index/resource_index/rosidl_interfaces/perception_msgs\n'}
+[2.882648] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/msg/Detection.json\n'}
+[2.882800] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/msg/DetectionArray.json\n'}
+[2.882962] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs\n'}
+[2.883282] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg\n'}
+[2.883440] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detection_array.h\n'}
+[2.883586] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detection.h\n'}
+[2.883758] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[2.883867] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail\n'}
+[2.884064] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection_array__description.c\n'}
+[2.884194] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection__struct.h\n'}
+[2.884323] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection__functions.h\n'}
+[2.884496] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection__type_support.h\n'}
+[2.884609] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection_array__type_support.h\n'}
+[2.884757] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection_array__functions.h\n'}
+[2.884880] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection_array__struct.h\n'}
+[2.885102] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection_array__functions.c\n'}
+[2.885174] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection__type_support.c\n'}
+[2.885264] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection_array__type_support.c\n'}
+[2.885428] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection__functions.c\n'}
+[2.885702] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection__description.c\n'}
+[2.885927] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/environment/library_path.sh\n'}
+[2.886100] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/environment/library_path.dsv\n'}
+[2.886408] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/lib/libperception_msgs__rosidl_generator_c.so\n'}
+[2.886747] (perception_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/perception_msgs/lib/libperception_msgs__rosidl_generator_c.so" to ""\n'}
+[2.886973] (perception_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs\n'}
+[2.887234] (perception_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg\n'}
+[2.887437] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[2.887472] (perception_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail\n'}
+[2.887498] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection__rosidl_typesupport_fastrtps_c.h\n'}
+[2.887529] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection_array__rosidl_typesupport_fastrtps_c.h\n'}
+[2.887550] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/lib/libperception_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[2.887673] (perception_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/perception_msgs/lib/libperception_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[2.887736] (perception_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs\n'}
+[2.887881] (perception_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg\n'}
+[2.888071] (perception_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail\n'}
+[2.888106] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h\n'}
+[2.888240] (perception_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection__type_support.c\n'}
+[2.888432] (perception_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection_array__type_support.c\n'}
+[2.888616] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection_array__rosidl_typesupport_introspection_c.h\n'}
+[2.888670] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[2.888796] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/lib/libperception_msgs__rosidl_typesupport_introspection_c.so\n'}
+[2.888968] (perception_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/perception_msgs/lib/libperception_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[2.889020] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/lib/libperception_msgs__rosidl_typesupport_c.so\n'}
+[2.889046] (perception_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/perception_msgs/lib/libperception_msgs__rosidl_typesupport_c.so" to ""\n'}
+[2.889293] (perception_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs\n'}
+[2.889408] (perception_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg\n'}
+[2.889542] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detection_array.hpp\n'}
+[2.889661] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detection.hpp\n'}
+[2.889692] (perception_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail\n'}
+[2.889903] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection__builder.hpp\n'}
+[2.889992] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection_array__type_support.hpp\n'}
+[2.890024] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection__traits.hpp\n'}
+[2.890048] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection_array__traits.hpp\n'}
+[2.890208] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection_array__struct.hpp\n'}
+[2.890275] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection_array__builder.hpp\n'}
+[2.890464] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection__type_support.hpp\n'}
+[2.890671] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection__struct.hpp\n'}
+[2.890876] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[2.890989] (perception_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs\n'}
+[2.891019] (perception_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg\n'}
+[2.891043] (perception_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail\n'}
+[2.891073] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/dds_fastrtps\n'}
+[2.891095] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.891264] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.891361] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[2.891507] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/lib/libperception_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[2.891612] (perception_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/perception_msgs/lib/libperception_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[2.891641] (perception_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs\n'}
+[2.891665] (perception_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg\n'}
+[2.891688] (perception_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail\n'}
+[2.891740] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection_array__type_support.cpp\n'}
+[2.891912] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection__type_support.cpp\n'}
+[2.891947] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.892056] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.892260] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/lib/libperception_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[2.892552] (perception_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/perception_msgs/lib/libperception_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[2.892673] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/lib/libperception_msgs__rosidl_typesupport_cpp.so\n'}
+[2.892935] (perception_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/perception_msgs/lib/libperception_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[2.893027] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/environment/pythonpath.sh\n'}
+[2.893155] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/environment/pythonpath.dsv\n'}
+[2.893375] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs-0.0.1-py3.12.egg-info\n'}
+[2.893728] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs-0.0.1-py3.12.egg-info/PKG-INFO\n'}
+[2.893864] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs-0.0.1-py3.12.egg-info/dependency_links.txt\n'}
+[2.894017] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs-0.0.1-py3.12.egg-info/SOURCES.txt\n'}
+[2.894141] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs-0.0.1-py3.12.egg-info/top_level.txt\n'}
+[2.894295] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs\n'}
+[2.894521] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/_perception_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[2.894712] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/_perception_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[2.894859] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/msg\n'}
+[2.894950] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/msg/_detection_array.py\n'}
+[2.895063] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/msg/_detection_array_s.c\n'}
+[2.895240] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/msg/_detection.py\n'}
+[2.895292] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/msg/_detection_s.c\n'}
+[2.895390] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/msg/__init__.py\n'}
+[2.895545] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/perception_msgs_s__rosidl_typesupport_c.so\n'}
+[2.895668] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/perception_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[2.895929] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/_perception_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[2.895987] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/perception_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[2.896122] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/__init__.py\n'}
+[2.909900] (-) TimerEvent: {}
+[2.919382] (perception_msgs) StdoutLine: {'line': b"Listing '/root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs'...\n"}
+[2.919535] (perception_msgs) StdoutLine: {'line': b"Compiling '/root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/__init__.py'...\n"}
+[2.919573] (perception_msgs) StdoutLine: {'line': b"Listing '/root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/msg'...\n"}
+[2.919599] (perception_msgs) StdoutLine: {'line': b"Compiling '/root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/msg/__init__.py'...\n"}
+[2.919621] (perception_msgs) StdoutLine: {'line': b"Compiling '/root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/msg/_detection.py'...\n"}
+[2.919642] (perception_msgs) StdoutLine: {'line': b"Compiling '/root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/msg/_detection_array.py'...\n"}
+[2.922533] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/perception_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[2.922719] (perception_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/perception_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[2.922885] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/perception_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[2.923075] (perception_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/perception_msgs_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[2.923243] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/perception_msgs_s__rosidl_typesupport_c.so\n'}
+[2.923421] (perception_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/perception_msgs_s__rosidl_typesupport_c.so" to ""\n'}
+[2.923591] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/lib/libperception_msgs__rosidl_generator_py.so\n'}
+[2.923774] (perception_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/perception_msgs/lib/libperception_msgs__rosidl_generator_py.so" to ""\n'}
+[2.923936] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/ament_index/resource_index/rust_packages/perception_msgs\n'}
+[2.924047] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/rust\n'}
+[2.924212] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/rust/Cargo.toml\n'}
+[2.924337] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/rust/build.rs\n'}
+[2.924503] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/rust/src\n'}
+[2.924688] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/rust/src/msg.rs\n'}
+[2.924860] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/rust/src/lib.rs\n'}
+[2.925022] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/rust/src/msg\n'}
+[2.925172] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/rust/src/msg/rmw.rs\n'}
+[2.925434] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/msg/Detection.idl\n'}
+[2.925642] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/msg/DetectionArray.idl\n'}
+[2.925823] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/msg/Detection.msg\n'}
+[2.925929] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/msg/DetectionArray.msg\n'}
+[2.926030] (perception_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/perception_msgs/share/ament_index/resource_index/package_run_dependencies/perception_msgs\n'}
+[2.926164] (perception_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/perception_msgs/share/ament_index/resource_index/parent_prefix_path/perception_msgs\n'}
+[2.926249] (perception_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/perception_msgs/share/perception_msgs/environment/ament_prefix_path.sh\n'}
+[2.926280] (perception_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/perception_msgs/share/perception_msgs/environment/ament_prefix_path.dsv\n'}
+[2.926402] (perception_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/perception_msgs/share/perception_msgs/environment/path.sh\n'}
+[2.926455] (perception_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/perception_msgs/share/perception_msgs/environment/path.dsv\n'}
+[2.926637] (perception_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/perception_msgs/share/perception_msgs/local_setup.bash\n'}
+[2.926738] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/local_setup.sh\n'}
+[2.926767] (perception_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/perception_msgs/share/perception_msgs/local_setup.zsh\n'}
+[2.926791] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/local_setup.dsv\n'}
+[2.926908] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/package.dsv\n'}
+[2.927116] (perception_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/perception_msgs/share/ament_index/resource_index/packages/perception_msgs\n'}
+[2.927343] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/export_perception_msgs__rosidl_generator_cExport.cmake\n'}
+[2.927407] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/export_perception_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[2.927546] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/export_perception_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[2.927711] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/export_perception_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[2.927907] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/perception_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[2.928120] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/perception_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[2.928276] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/perception_msgs__rosidl_typesupport_cExport.cmake\n'}
+[2.928443] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/perception_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[2.928603] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/export_perception_msgs__rosidl_generator_cppExport.cmake\n'}
+[2.928766] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/export_perception_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[2.928951] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/export_perception_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[2.929104] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/perception_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[2.929271] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/perception_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[2.929478] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/perception_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[2.929652] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/perception_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[2.929903] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/export_perception_msgs__rosidl_generator_pyExport.cmake\n'}
+[2.930075] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/export_perception_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[2.930224] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[2.930477] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[2.930631] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[2.930891] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[2.931067] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[2.931284] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[2.931663] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[2.931883] (perception_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/perception_msgsConfig.cmake\n'}
+[2.931989] (perception_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/perception_msgsConfig-version.cmake\n'}
+[2.932025] (perception_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/perception_msgs/share/perception_msgs/package.xml\n'}
+[2.933559] (perception_msgs) CommandEnded: {'returncode': 0}
+[2.948339] (perception_msgs) JobEnded: {'identifier': 'perception_msgs', 'rc': 0}
+[2.949445] (-) EventReactorShutdown: {}

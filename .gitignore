@@ -1,0 +1,4 @@
+# ROS bags
+media/**/bag_*/
+*.mcap
+*.db3

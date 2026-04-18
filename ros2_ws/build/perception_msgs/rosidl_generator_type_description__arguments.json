@@ -1,0 +1,12 @@
+{
+  "package_name": "perception_msgs",
+  "output_dir": "/root/ros2_ws/build/perception_msgs/rosidl_generator_type_description/perception_msgs",
+  "idl_tuples": [
+    "/root/ros2_ws/build/perception_msgs/rosidl_adapter/perception_msgs:msg/Detection.idl",
+    "/root/ros2_ws/build/perception_msgs/rosidl_adapter/perception_msgs:msg/DetectionArray.idl"
+  ],
+  "include_paths": [
+    "std_msgs:/opt/ros/jazzy/share/std_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces"
+  ]
+}

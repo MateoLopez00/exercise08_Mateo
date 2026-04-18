@@ -1,0 +1,259 @@
+[0.009s] Invoking command in '/root/ros2_ws/build/perception_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/perception_msgs -- -j12 -l12
+[0.025s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.157s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.163s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.184s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.216s] -- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.220s] -- Found std_msgs: 5.3.7 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.235s] -- Found sensor_msgs: 5.3.7 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[0.602s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[0.856s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.183s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.187s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[1.260s] -- Found PythonExtra: /usr/bin/python3  
+[1.489s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[1.540s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.550s] -- Configuring done (1.5s)
+[1.592s] -- Generating done (0.0s)
+[1.603s] -- Build files have been written to: /root/ros2_ws/build/perception_msgs
+[1.627s] [  2%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[1.627s] [  4%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[1.632s] [  4%] Built target ament_cmake_python_copy_perception_msgs
+[1.736s] [  4%] Built target perception_msgs__rosidl_generator_type_description
+[1.744s] [  6%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.744s] [  6%] Built target perception_msgs__rs
+[1.749s] running egg_info
+[1.750s] creating perception_msgs.egg-info
+[1.751s] [  8%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.889s] [  8%] Built target perception_msgs__cpp
+[1.901s] [ 11%] [32mBuilding C object CMakeFiles/perception_msgs__rosidl_generator_c.dir/rosidl_generator_c/perception_msgs/msg/detail/detection__description.c.o[0m
+[1.901s] [ 13%] [32mBuilding C object CMakeFiles/perception_msgs__rosidl_generator_c.dir/rosidl_generator_c/perception_msgs/msg/detail/detection__functions.c.o[0m
+[1.902s] writing perception_msgs.egg-info/PKG-INFO
+[1.902s] writing dependency_links to perception_msgs.egg-info/dependency_links.txt
+[1.902s] [ 15%] [32mBuilding C object CMakeFiles/perception_msgs__rosidl_generator_c.dir/rosidl_generator_c/perception_msgs/msg/detail/detection_array__description.c.o[0m
+[1.902s] writing top-level names to perception_msgs.egg-info/top_level.txt
+[1.902s] writing manifest file 'perception_msgs.egg-info/SOURCES.txt'
+[1.902s] [ 20%] [32mBuilding C object CMakeFiles/perception_msgs__rosidl_generator_c.dir/rosidl_generator_c/perception_msgs/msg/detail/detection__type_support.c.o[0m
+[1.903s] [ 20%] [32mBuilding C object CMakeFiles/perception_msgs__rosidl_generator_c.dir/rosidl_generator_c/perception_msgs/msg/detail/detection_array__functions.c.o[0m
+[1.903s] [ 22%] [32mBuilding C object CMakeFiles/perception_msgs__rosidl_generator_c.dir/rosidl_generator_c/perception_msgs/msg/detail/detection_array__type_support.c.o[0m
+[1.929s] reading manifest file 'perception_msgs.egg-info/SOURCES.txt'
+[1.929s] writing manifest file 'perception_msgs.egg-info/SOURCES.txt'
+[1.945s] [ 24%] [32m[1mLinking C shared library libperception_msgs__rosidl_generator_c.so[0m
+[1.946s] [ 24%] Built target ament_cmake_python_build_perception_msgs_egg
+[1.968s] [ 24%] Built target perception_msgs__rosidl_generator_c
+[1.975s] [ 26%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.975s] [ 28%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.976s] [ 31%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.976s] [ 33%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.977s] [ 35%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.977s] [ 37%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.098s] [ 46%] [32mBuilding CXX object CMakeFiles/perception_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/perception_msgs/msg/detection_array__type_support.cpp.o[0m
+[2.098s] [ 46%] [32mBuilding CXX object CMakeFiles/perception_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/perception_msgs/msg/detection__type_support.cpp.o[0m
+[2.098s] [ 46%] [32mBuilding CXX object CMakeFiles/perception_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/perception_msgs/msg/detection__type_support.cpp.o[0m
+[2.098s] [ 46%] [32mBuilding CXX object CMakeFiles/perception_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/perception_msgs/msg/detection_array__type_support.cpp.o[0m
+[2.107s] [ 48%] [32mBuilding CXX object CMakeFiles/perception_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/perception_msgs/msg/detail/detection__type_support.cpp.o[0m
+[2.107s] [ 51%] [32mBuilding CXX object CMakeFiles/perception_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/perception_msgs/msg/detail/detection_array__type_support.cpp.o[0m
+[2.107s] [ 53%] [32mBuilding C object CMakeFiles/perception_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/perception_msgs/msg/detail/detection__type_support.c.o[0m
+[2.107s] [ 55%] [32mBuilding C object CMakeFiles/perception_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/perception_msgs/msg/detail/detection_array__type_support.c.o[0m
+[2.123s] [ 57%] [32mBuilding CXX object CMakeFiles/perception_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/perception_msgs/msg/detail/dds_fastrtps/detection__type_support.cpp.o[0m
+[2.123s] [ 60%] [32mBuilding CXX object CMakeFiles/perception_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/perception_msgs/msg/detail/dds_fastrtps/detection_array__type_support.cpp.o[0m
+[2.127s] [ 62%] [32mBuilding CXX object CMakeFiles/perception_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/perception_msgs/msg/detail/detection__type_support_c.cpp.o[0m
+[2.128s] [ 64%] [32mBuilding CXX object CMakeFiles/perception_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/perception_msgs/msg/detail/detection_array__type_support_c.cpp.o[0m
+[2.137s] [ 68%] [32m[1mLinking C shared library libperception_msgs__rosidl_typesupport_introspection_c.so[0m
+[2.137s] [ 68%] [32m[1mLinking CXX shared library libperception_msgs__rosidl_typesupport_c.so[0m
+[2.165s] [ 68%] Built target perception_msgs__rosidl_typesupport_introspection_c
+[2.167s] [ 68%] Built target perception_msgs__rosidl_typesupport_c
+[2.308s] [ 71%] [32m[1mLinking CXX shared library libperception_msgs__rosidl_typesupport_cpp.so[0m
+[2.335s] [ 71%] Built target perception_msgs__rosidl_typesupport_cpp
+[2.341s] [ 73%] [32m[1mLinking CXX shared library libperception_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[2.382s] [ 73%] Built target perception_msgs__rosidl_typesupport_introspection_cpp
+[2.399s] [ 75%] [32m[1mLinking CXX shared library libperception_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[2.409s] [ 77%] [32m[1mLinking CXX shared library libperception_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.440s] [ 77%] Built target perception_msgs__rosidl_typesupport_fastrtps_c
+[2.449s] [ 77%] Built target perception_msgs__rosidl_typesupport_fastrtps_cpp
+[2.461s] [ 77%] Built target perception_msgs
+[2.474s] [ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[2.631s] [ 80%] Built target perception_msgs__py
+[2.643s] [ 82%] [32mBuilding C object CMakeFiles/perception_msgs__rosidl_generator_py.dir/rosidl_generator_py/perception_msgs/msg/_detection_s.c.o[0m
+[2.643s] [ 84%] [32mBuilding C object CMakeFiles/perception_msgs__rosidl_generator_py.dir/rosidl_generator_py/perception_msgs/msg/_detection_array_s.c.o[0m
+[2.752s] [ 86%] [32m[1mLinking C shared library libperception_msgs__rosidl_generator_py.so[0m
+[2.779s] [ 86%] Built target perception_msgs__rosidl_generator_py
+[2.791s] [ 93%] [32mBuilding C object CMakeFiles/perception_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/perception_msgs/_perception_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[2.791s] [ 93%] [32mBuilding C object CMakeFiles/perception_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/perception_msgs/_perception_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[2.791s] [ 93%] [32mBuilding C object CMakeFiles/perception_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/perception_msgs/_perception_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[2.844s] [ 97%] [32m[1mLinking C shared module rosidl_generator_py/perception_msgs/perception_msgs_s__rosidl_typesupport_c.so[0m
+[2.844s] [ 97%] [32m[1mLinking C shared module rosidl_generator_py/perception_msgs/perception_msgs_s__rosidl_typesupport_introspection_c.so[0m
+[2.845s] [100%] [32m[1mLinking C shared module rosidl_generator_py/perception_msgs/perception_msgs_s__rosidl_typesupport_fastrtps_c.so[0m
+[2.863s] [100%] Built target perception_msgs_s__rosidl_typesupport_introspection_c
+[2.863s] [100%] Built target perception_msgs_s__rosidl_typesupport_c
+[2.863s] [100%] Built target perception_msgs_s__rosidl_typesupport_fastrtps_c
+[2.871s] Invoked command in '/root/ros2_ws/build/perception_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /root/ros2_ws/build/perception_msgs -- -j12 -l12
+[2.877s] Invoking command in '/root/ros2_ws/build/perception_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /root/ros2_ws/build/perception_msgs
+[2.882s] -- Install configuration: ""
+[2.882s] -- Installing: /root/ros2_ws/install/perception_msgs/share/ament_index/resource_index/rosidl_interfaces/perception_msgs
+[2.882s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/msg/Detection.json
+[2.882s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/msg/DetectionArray.json
+[2.883s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs
+[2.883s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg
+[2.883s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detection_array.h
+[2.883s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detection.h
+[2.883s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/rosidl_generator_c__visibility_control.h
+[2.884s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail
+[2.884s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection_array__description.c
+[2.884s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection__struct.h
+[2.884s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection__functions.h
+[2.884s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection__type_support.h
+[2.884s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection_array__type_support.h
+[2.884s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection_array__functions.h
+[2.885s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection_array__struct.h
+[2.885s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection_array__functions.c
+[2.885s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection__type_support.c
+[2.885s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection_array__type_support.c
+[2.885s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection__functions.c
+[2.885s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection__description.c
+[2.886s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/environment/library_path.sh
+[2.886s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/environment/library_path.dsv
+[2.886s] -- Installing: /root/ros2_ws/install/perception_msgs/lib/libperception_msgs__rosidl_generator_c.so
+[2.887s] -- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/perception_msgs/lib/libperception_msgs__rosidl_generator_c.so" to ""
+[2.887s] -- Up-to-date: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs
+[2.887s] -- Up-to-date: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg
+[2.887s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.887s] -- Up-to-date: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail
+[2.887s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection__rosidl_typesupport_fastrtps_c.h
+[2.887s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection_array__rosidl_typesupport_fastrtps_c.h
+[2.887s] -- Installing: /root/ros2_ws/install/perception_msgs/lib/libperception_msgs__rosidl_typesupport_fastrtps_c.so
+[2.887s] -- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/perception_msgs/lib/libperception_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[2.887s] -- Up-to-date: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs
+[2.888s] -- Up-to-date: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg
+[2.888s] -- Up-to-date: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail
+[2.888s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h
+[2.888s] -- Up-to-date: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection__type_support.c
+[2.888s] -- Up-to-date: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection_array__type_support.c
+[2.888s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection_array__rosidl_typesupport_introspection_c.h
+[2.888s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.889s] -- Installing: /root/ros2_ws/install/perception_msgs/lib/libperception_msgs__rosidl_typesupport_introspection_c.so
+[2.889s] -- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/perception_msgs/lib/libperception_msgs__rosidl_typesupport_introspection_c.so" to ""
+[2.889s] -- Installing: /root/ros2_ws/install/perception_msgs/lib/libperception_msgs__rosidl_typesupport_c.so
+[2.889s] -- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/perception_msgs/lib/libperception_msgs__rosidl_typesupport_c.so" to ""
+[2.889s] -- Up-to-date: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs
+[2.889s] -- Up-to-date: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg
+[2.889s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detection_array.hpp
+[2.889s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detection.hpp
+[2.889s] -- Up-to-date: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail
+[2.890s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection__builder.hpp
+[2.890s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection_array__type_support.hpp
+[2.890s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection__traits.hpp
+[2.890s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection_array__traits.hpp
+[2.890s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection_array__struct.hpp
+[2.890s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection_array__builder.hpp
+[2.890s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection__type_support.hpp
+[2.890s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection__struct.hpp
+[2.891s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[2.891s] -- Up-to-date: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs
+[2.891s] -- Up-to-date: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg
+[2.891s] -- Up-to-date: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail
+[2.891s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/dds_fastrtps
+[2.891s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection_array__rosidl_typesupport_fastrtps_cpp.hpp
+[2.891s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection__rosidl_typesupport_fastrtps_cpp.hpp
+[2.891s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.891s] -- Installing: /root/ros2_ws/install/perception_msgs/lib/libperception_msgs__rosidl_typesupport_fastrtps_cpp.so
+[2.891s] -- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/perception_msgs/lib/libperception_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[2.891s] -- Up-to-date: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs
+[2.891s] -- Up-to-date: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg
+[2.891s] -- Up-to-date: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail
+[2.892s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection_array__type_support.cpp
+[2.892s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection__type_support.cpp
+[2.892s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection_array__rosidl_typesupport_introspection_cpp.hpp
+[2.892s] -- Installing: /root/ros2_ws/install/perception_msgs/include/perception_msgs/perception_msgs/msg/detail/detection__rosidl_typesupport_introspection_cpp.hpp
+[2.892s] -- Installing: /root/ros2_ws/install/perception_msgs/lib/libperception_msgs__rosidl_typesupport_introspection_cpp.so
+[2.892s] -- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/perception_msgs/lib/libperception_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[2.892s] -- Installing: /root/ros2_ws/install/perception_msgs/lib/libperception_msgs__rosidl_typesupport_cpp.so
+[2.893s] -- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/perception_msgs/lib/libperception_msgs__rosidl_typesupport_cpp.so" to ""
+[2.893s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/environment/pythonpath.sh
+[2.893s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/environment/pythonpath.dsv
+[2.893s] -- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs-0.0.1-py3.12.egg-info
+[2.893s] -- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs-0.0.1-py3.12.egg-info/PKG-INFO
+[2.894s] -- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs-0.0.1-py3.12.egg-info/dependency_links.txt
+[2.894s] -- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs-0.0.1-py3.12.egg-info/SOURCES.txt
+[2.894s] -- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs-0.0.1-py3.12.egg-info/top_level.txt
+[2.894s] -- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs
+[2.894s] -- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/_perception_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.894s] -- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/_perception_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[2.895s] -- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/msg
+[2.895s] -- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/msg/_detection_array.py
+[2.895s] -- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/msg/_detection_array_s.c
+[2.895s] -- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/msg/_detection.py
+[2.895s] -- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/msg/_detection_s.c
+[2.895s] -- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/msg/__init__.py
+[2.895s] -- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/perception_msgs_s__rosidl_typesupport_c.so
+[2.895s] -- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/perception_msgs_s__rosidl_typesupport_introspection_c.so
+[2.896s] -- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/_perception_msgs_s.ep.rosidl_typesupport_c.c
+[2.896s] -- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/perception_msgs_s__rosidl_typesupport_fastrtps_c.so
+[2.896s] -- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/__init__.py
+[2.919s] Listing '/root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs'...
+[2.919s] Compiling '/root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/__init__.py'...
+[2.919s] Listing '/root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/msg'...
+[2.919s] Compiling '/root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/msg/__init__.py'...
+[2.919s] Compiling '/root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/msg/_detection.py'...
+[2.919s] Compiling '/root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/msg/_detection_array.py'...
+[2.922s] -- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/perception_msgs_s__rosidl_typesupport_fastrtps_c.so
+[2.922s] -- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/perception_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""
+[2.923s] -- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/perception_msgs_s__rosidl_typesupport_introspection_c.so
+[2.923s] -- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/perception_msgs_s__rosidl_typesupport_introspection_c.so" to ""
+[2.923s] -- Installing: /root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/perception_msgs_s__rosidl_typesupport_c.so
+[2.923s] -- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/perception_msgs/lib/python3.12/site-packages/perception_msgs/perception_msgs_s__rosidl_typesupport_c.so" to ""
+[2.923s] -- Installing: /root/ros2_ws/install/perception_msgs/lib/libperception_msgs__rosidl_generator_py.so
+[2.923s] -- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/perception_msgs/lib/libperception_msgs__rosidl_generator_py.so" to ""
+[2.924s] -- Installing: /root/ros2_ws/install/perception_msgs/share/ament_index/resource_index/rust_packages/perception_msgs
+[2.924s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/rust
+[2.924s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/rust/Cargo.toml
+[2.924s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/rust/build.rs
+[2.924s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/rust/src
+[2.924s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/rust/src/msg.rs
+[2.925s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/rust/src/lib.rs
+[2.925s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/rust/src/msg
+[2.925s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/rust/src/msg/rmw.rs
+[2.925s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/msg/Detection.idl
+[2.925s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/msg/DetectionArray.idl
+[2.926s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/msg/Detection.msg
+[2.926s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/msg/DetectionArray.msg
+[2.926s] -- Up-to-date: /root/ros2_ws/install/perception_msgs/share/ament_index/resource_index/package_run_dependencies/perception_msgs
+[2.926s] -- Up-to-date: /root/ros2_ws/install/perception_msgs/share/ament_index/resource_index/parent_prefix_path/perception_msgs
+[2.926s] -- Up-to-date: /root/ros2_ws/install/perception_msgs/share/perception_msgs/environment/ament_prefix_path.sh
+[2.926s] -- Up-to-date: /root/ros2_ws/install/perception_msgs/share/perception_msgs/environment/ament_prefix_path.dsv
+[2.926s] -- Up-to-date: /root/ros2_ws/install/perception_msgs/share/perception_msgs/environment/path.sh
+[2.926s] -- Up-to-date: /root/ros2_ws/install/perception_msgs/share/perception_msgs/environment/path.dsv
+[2.926s] -- Up-to-date: /root/ros2_ws/install/perception_msgs/share/perception_msgs/local_setup.bash
+[2.926s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/local_setup.sh
+[2.926s] -- Up-to-date: /root/ros2_ws/install/perception_msgs/share/perception_msgs/local_setup.zsh
+[2.926s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/local_setup.dsv
+[2.927s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/package.dsv
+[2.927s] -- Up-to-date: /root/ros2_ws/install/perception_msgs/share/ament_index/resource_index/packages/perception_msgs
+[2.927s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/export_perception_msgs__rosidl_generator_cExport.cmake
+[2.927s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/export_perception_msgs__rosidl_generator_cExport-noconfig.cmake
+[2.927s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/export_perception_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[2.927s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/export_perception_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[2.928s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/perception_msgs__rosidl_typesupport_introspection_cExport.cmake
+[2.928s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/perception_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.928s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/perception_msgs__rosidl_typesupport_cExport.cmake
+[2.928s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/perception_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[2.928s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/export_perception_msgs__rosidl_generator_cppExport.cmake
+[2.928s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/export_perception_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.929s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/export_perception_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[2.929s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/perception_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[2.929s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/perception_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.929s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/perception_msgs__rosidl_typesupport_cppExport.cmake
+[2.929s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/perception_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[2.930s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/export_perception_msgs__rosidl_generator_pyExport.cmake
+[2.930s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/export_perception_msgs__rosidl_generator_pyExport-noconfig.cmake
+[2.930s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/rosidl_cmake-extras.cmake
+[2.930s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.930s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.931s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[2.931s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[2.931s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.931s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.932s] -- Installing: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/perception_msgsConfig.cmake
+[2.932s] -- Up-to-date: /root/ros2_ws/install/perception_msgs/share/perception_msgs/cmake/perception_msgsConfig-version.cmake
+[2.932s] -- Up-to-date: /root/ros2_ws/install/perception_msgs/share/perception_msgs/package.xml
+[2.934s] Invoked command in '/root/ros2_ws/build/perception_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /root/ros2_ws/build/perception_msgs

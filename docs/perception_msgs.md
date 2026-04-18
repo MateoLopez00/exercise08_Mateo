@@ -1,0 +1,19 @@
+string class_name
+float32 confidence
+int32 x
+int32 y
+int32 width
+int32 height
+---
+std_msgs/Header header
+	builtin_interfaces/Time stamp
+		int32 sec
+		uint32 nanosec
+	string frame_id
+Detection[] detections
+	string class_name
+	float32 confidence
+	int32 x
+	int32 y
+	int32 width
+	int32 height
