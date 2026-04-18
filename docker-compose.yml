@@ -1,33 +1,27 @@
-
 services:
-  # ROS 2 Jazzy + Gazebo Harmonic + PX4 Autopilot + NoVNC
   px4-sitl:
     build:
       context: .
       dockerfile: px4-sitl.Dockerfile
     image: erdemuysalx/px4-sitl:latest
-    container_name: px4_sitl 
+    container_name: px4_sitl
     privileged: true
     stdin_open: true
     tty: true
-    
-    # volumes:
-      # - /tmp/.X11-unix:/tmp/.X11-unix:rw
-      # - /home/user/workspace:/root/workspace
-
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - ./worlds:/root/worlds:rw
+      - ./ros2_ws:/root/ros2_ws:rw
     environment:
-      - DISPLAY=:1
-      # - DISPLAY=${DISPLAY}
-      # - PX4_GZ_WORLD=default
-
+      - DISPLAY=${DISPLAY}
+      - QT_X11_NO_MITSHM=1
+      - PX4_GZ_WORLD=perception_world
     ports:
       - "5901:5901"
       - "6080:6080"
       - "14550:14550/udp"
       - "18570:18570/udp"
-    
     restart: unless-stopped
-
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:6080/"]
       interval: 30s
