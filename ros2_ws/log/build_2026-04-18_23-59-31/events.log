@@ -1,0 +1,49 @@
+[0.000000] (-) TimerEvent: {}
+[0.000058] (-) JobUnselected: {'identifier': 'perception_msgs'}
+[0.000077] (-) JobUnselected: {'identifier': 'yolo_detector'}
+[0.000087] (depth_perception) JobQueued: {'identifier': 'depth_perception', 'dependencies': OrderedDict()}
+[0.000471] (depth_perception) JobStarted: {'identifier': 'depth_perception'}
+[0.099604] (-) TimerEvent: {}
+[0.200660] (-) TimerEvent: {}
+[0.300924] (-) TimerEvent: {}
+[0.401268] (-) TimerEvent: {}
+[0.492426] (depth_perception) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/depth_perception', 'build', '--build-base', '/root/ros2_ws/build/depth_perception/build', 'install', '--record', '/root/ros2_ws/build/depth_perception/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/root/ros2_ws/src/depth_perception', 'env': {'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'e9baeb4f9ac3', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/root', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PX4_GZ_WORLD': 'perception_world', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'DEBIAN_FRONTEND': 'noninteractive', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/root/ros2_ws/build/depth_perception', 'LC_ALL': 'C.UTF-8', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share/:/usr/share/', 'PYTHONPATH': '/root/ros2_ws/build/depth_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ros2_ws/install/depth_perception/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[0.501441] (-) TimerEvent: {}
+[0.601649] (-) TimerEvent: {}
+[0.646638] (depth_perception) StdoutLine: {'line': b'running egg_info\n'}
+[0.701989] (-) TimerEvent: {}
+[0.704662] (depth_perception) StdoutLine: {'line': b'writing ../../build/depth_perception/depth_perception.egg-info/PKG-INFO\n'}
+[0.704795] (depth_perception) StdoutLine: {'line': b'writing dependency_links to ../../build/depth_perception/depth_perception.egg-info/dependency_links.txt\n'}
+[0.704826] (depth_perception) StdoutLine: {'line': b'writing entry points to ../../build/depth_perception/depth_perception.egg-info/entry_points.txt\n'}
+[0.704852] (depth_perception) StdoutLine: {'line': b'writing requirements to ../../build/depth_perception/depth_perception.egg-info/requires.txt\n'}
+[0.704971] (depth_perception) StdoutLine: {'line': b'writing top-level names to ../../build/depth_perception/depth_perception.egg-info/top_level.txt\n'}
+[0.727267] (depth_perception) StdoutLine: {'line': b"reading manifest file '../../build/depth_perception/depth_perception.egg-info/SOURCES.txt'\n"}
+[0.727752] (depth_perception) StdoutLine: {'line': b"writing manifest file '../../build/depth_perception/depth_perception.egg-info/SOURCES.txt'\n"}
+[0.728762] (depth_perception) StdoutLine: {'line': b'running build\n'}
+[0.728922] (depth_perception) StdoutLine: {'line': b'running build_py\n'}
+[0.729037] (depth_perception) StdoutLine: {'line': b'copying depth_perception/ground_segmentation_node.py -> /root/ros2_ws/build/depth_perception/build/lib/depth_perception\n'}
+[0.729137] (depth_perception) StdoutLine: {'line': b'copying depth_perception/depth_node.py -> /root/ros2_ws/build/depth_perception/build/lib/depth_perception\n'}
+[0.729250] (depth_perception) StdoutLine: {'line': b'copying depth_perception/__init__.py -> /root/ros2_ws/build/depth_perception/build/lib/depth_perception\n'}
+[0.730684] (depth_perception) StdoutLine: {'line': b'running install\n'}
+[0.734433] (depth_perception) StdoutLine: {'line': b'running install_lib\n'}
+[0.745979] (depth_perception) StdoutLine: {'line': b'copying /root/ros2_ws/build/depth_perception/build/lib/depth_perception/ground_segmentation_node.py -> /root/ros2_ws/install/depth_perception/lib/python3.12/site-packages/depth_perception\n'}
+[0.746365] (depth_perception) StdoutLine: {'line': b'copying /root/ros2_ws/build/depth_perception/build/lib/depth_perception/depth_node.py -> /root/ros2_ws/install/depth_perception/lib/python3.12/site-packages/depth_perception\n'}
+[0.746724] (depth_perception) StdoutLine: {'line': b'copying /root/ros2_ws/build/depth_perception/build/lib/depth_perception/__init__.py -> /root/ros2_ws/install/depth_perception/lib/python3.12/site-packages/depth_perception\n'}
+[0.747259] (depth_perception) StdoutLine: {'line': b'byte-compiling /root/ros2_ws/install/depth_perception/lib/python3.12/site-packages/depth_perception/ground_segmentation_node.py to ground_segmentation_node.cpython-312.pyc\n'}
+[0.748166] (depth_perception) StdoutLine: {'line': b'byte-compiling /root/ros2_ws/install/depth_perception/lib/python3.12/site-packages/depth_perception/depth_node.py to depth_node.cpython-312.pyc\n'}
+[0.749197] (depth_perception) StdoutLine: {'line': b'byte-compiling /root/ros2_ws/install/depth_perception/lib/python3.12/site-packages/depth_perception/__init__.py to __init__.cpython-312.pyc\n'}
+[0.749541] (depth_perception) StdoutLine: {'line': b'running install_data\n'}
+[0.749793] (depth_perception) StdoutLine: {'line': b'copying resource/depth_perception -> /root/ros2_ws/install/depth_perception/share/ament_index/resource_index/packages\n'}
+[0.750065] (depth_perception) StdoutLine: {'line': b'copying package.xml -> /root/ros2_ws/install/depth_perception/share/depth_perception\n'}
+[0.750428] (depth_perception) StdoutLine: {'line': b'copying rviz/depth.rviz -> /root/ros2_ws/install/depth_perception/share/depth_perception/rviz\n'}
+[0.750864] (depth_perception) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.761313] (depth_perception) StdoutLine: {'line': b"removing '/root/ros2_ws/install/depth_perception/lib/python3.12/site-packages/depth_perception-0.0.1-py3.12.egg-info' (and everything under it)\n"}
+[0.762286] (depth_perception) StdoutLine: {'line': b'Copying ../../build/depth_perception/depth_perception.egg-info to /root/ros2_ws/install/depth_perception/lib/python3.12/site-packages/depth_perception-0.0.1-py3.12.egg-info\n'}
+[0.763769] (depth_perception) StdoutLine: {'line': b'running install_scripts\n'}
+[0.801013] (depth_perception) StdoutLine: {'line': b'Installing depth_node script to /root/ros2_ws/install/depth_perception/lib/depth_perception\n'}
+[0.801608] (depth_perception) StdoutLine: {'line': b'Installing ground_segmentation_node script to /root/ros2_ws/install/depth_perception/lib/depth_perception\n'}
+[0.802042] (-) TimerEvent: {}
+[0.802252] (depth_perception) StdoutLine: {'line': b"writing list of installed files to '/root/ros2_ws/build/depth_perception/install.log'\n"}
+[0.830969] (depth_perception) CommandEnded: {'returncode': 0}
+[0.837910] (depth_perception) JobEnded: {'identifier': 'depth_perception', 'rc': 0}
+[0.838630] (-) EventReactorShutdown: {}

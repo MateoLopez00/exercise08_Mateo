@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: depth-perception
+Version: 0.0.1
+Summary: Depth + point cloud + ground segmentation
+Maintainer: Mateo Lopez
+Maintainer-email: you@example.com
+License: Apache-2.0

@@ -1,0 +1,34 @@
+[0.493s] Invoking command in '/root/ros2_ws/src/depth_perception': PYTHONPATH=/root/ros2_ws/build/depth_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ros2_ws/install/depth_perception/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/depth_perception build --build-base /root/ros2_ws/build/depth_perception/build install --record /root/ros2_ws/build/depth_perception/install.log --single-version-externally-managed install_data
+[0.646s] running egg_info
+[0.704s] writing ../../build/depth_perception/depth_perception.egg-info/PKG-INFO
+[0.704s] writing dependency_links to ../../build/depth_perception/depth_perception.egg-info/dependency_links.txt
+[0.704s] writing entry points to ../../build/depth_perception/depth_perception.egg-info/entry_points.txt
+[0.704s] writing requirements to ../../build/depth_perception/depth_perception.egg-info/requires.txt
+[0.705s] writing top-level names to ../../build/depth_perception/depth_perception.egg-info/top_level.txt
+[0.727s] reading manifest file '../../build/depth_perception/depth_perception.egg-info/SOURCES.txt'
+[0.727s] writing manifest file '../../build/depth_perception/depth_perception.egg-info/SOURCES.txt'
+[0.728s] running build
+[0.729s] running build_py
+[0.729s] copying depth_perception/ground_segmentation_node.py -> /root/ros2_ws/build/depth_perception/build/lib/depth_perception
+[0.729s] copying depth_perception/depth_node.py -> /root/ros2_ws/build/depth_perception/build/lib/depth_perception
+[0.729s] copying depth_perception/__init__.py -> /root/ros2_ws/build/depth_perception/build/lib/depth_perception
+[0.730s] running install
+[0.734s] running install_lib
+[0.746s] copying /root/ros2_ws/build/depth_perception/build/lib/depth_perception/ground_segmentation_node.py -> /root/ros2_ws/install/depth_perception/lib/python3.12/site-packages/depth_perception
+[0.746s] copying /root/ros2_ws/build/depth_perception/build/lib/depth_perception/depth_node.py -> /root/ros2_ws/install/depth_perception/lib/python3.12/site-packages/depth_perception
+[0.746s] copying /root/ros2_ws/build/depth_perception/build/lib/depth_perception/__init__.py -> /root/ros2_ws/install/depth_perception/lib/python3.12/site-packages/depth_perception
+[0.747s] byte-compiling /root/ros2_ws/install/depth_perception/lib/python3.12/site-packages/depth_perception/ground_segmentation_node.py to ground_segmentation_node.cpython-312.pyc
+[0.748s] byte-compiling /root/ros2_ws/install/depth_perception/lib/python3.12/site-packages/depth_perception/depth_node.py to depth_node.cpython-312.pyc
+[0.749s] byte-compiling /root/ros2_ws/install/depth_perception/lib/python3.12/site-packages/depth_perception/__init__.py to __init__.cpython-312.pyc
+[0.749s] running install_data
+[0.749s] copying resource/depth_perception -> /root/ros2_ws/install/depth_perception/share/ament_index/resource_index/packages
+[0.750s] copying package.xml -> /root/ros2_ws/install/depth_perception/share/depth_perception
+[0.750s] copying rviz/depth.rviz -> /root/ros2_ws/install/depth_perception/share/depth_perception/rviz
+[0.750s] running install_egg_info
+[0.761s] removing '/root/ros2_ws/install/depth_perception/lib/python3.12/site-packages/depth_perception-0.0.1-py3.12.egg-info' (and everything under it)
+[0.762s] Copying ../../build/depth_perception/depth_perception.egg-info to /root/ros2_ws/install/depth_perception/lib/python3.12/site-packages/depth_perception-0.0.1-py3.12.egg-info
+[0.763s] running install_scripts
+[0.801s] Installing depth_node script to /root/ros2_ws/install/depth_perception/lib/depth_perception
+[0.801s] Installing ground_segmentation_node script to /root/ros2_ws/install/depth_perception/lib/depth_perception
+[0.802s] writing list of installed files to '/root/ros2_ws/build/depth_perception/install.log'
+[0.832s] Invoked command in '/root/ros2_ws/src/depth_perception' returned '0': PYTHONPATH=/root/ros2_ws/build/depth_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ros2_ws/install/depth_perception/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/depth_perception build --build-base /root/ros2_ws/build/depth_perception/build install --record /root/ros2_ws/build/depth_perception/install.log --single-version-externally-managed install_data

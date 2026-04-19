@@ -1,0 +1,34 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+Visualization Manager:
+  Class: ""
+  Global Options:
+    Fixed Frame: camera_link
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Grid
+      Enabled: true
+    - Class: rviz_default_plugins/PointCloud2
+      Name: PointsAll
+      Topic:
+        Value: /perception/points
+      Enabled: true
+      Style: Points
+      Size (Pixels): 2
+    - Class: rviz_default_plugins/PointCloud2
+      Name: PointsGround
+      Topic:
+        Value: /perception/points_ground
+      Enabled: true
+      Color: 0; 255; 0
+      Style: Points
+      Size (Pixels): 2
+    - Class: rviz_default_plugins/PointCloud2
+      Name: PointsObstacles
+      Topic:
+        Value: /perception/points_obstacles
+      Enabled: true
+      Color: 255; 0; 0
+      Style: Points
+      Size (Pixels): 2

@@ -1,247 +1,305 @@
-# PX4-Sim
+# Ubungsblatt 08 - Perception
 
-Fully containerized PX4 Autopilot simulation environment with browser-based GUI access.
+Author: Mateo Lopez
 
-## What's Included
+This repository contains my solution for the perception homework using PX4 SITL, Gazebo Harmonic, ROS 2 Jazzy, a custom world, a YOLO-based RGB perception node, and a depth-based point-cloud pipeline.
 
-- **PX4 Autopilot** - Pre-built and ready to use
-- **ROS 2 Jazzy** - Latest ROS 2 LTS release
-- **Gazebo Harmonic** - Latest Gazebo simulator
-- **ROS Gazebo Bridge** (`ros-jazzy-ros-gz-bridge`) - Bidirectional transport bridge between Gazebo and ROS
-- **MAVROS** (`ros-jazzy-mavros`) - PX4 to ROS gateway
-- **TigerVNC + NoVNC** - Browser-based desktop access
-- **XFCE4 Desktop** - Full desktop environment
+## Project summary
 
-## Quick Start
+The project runs an `x500_depth` drone inside a custom Gazebo world and exposes the onboard RGB and depth camera streams to ROS 2 through `ros_gz_bridge`.
 
-### 1. Build the Images
+Two perception pipelines were implemented:
 
-```bash
-# Build everything
-./build.sh --all
+1. `yolo_detector`
+   Performs object detection on the RGB camera stream and publishes:
+   - `/perception/image_annotated`
+   - `/perception/detections`
+   - `/perception/fps`
+   - `/perception/latency_ms`
 
-# Or build step by step
-./build.sh --base  # ROS 2 + Gazebo
-./build.sh --full  # PX4 Autopilot + MAVROS + NoVNC
+2. `depth_perception`
+   Builds a colored point cloud from RGB + depth and separates the cloud into:
+   - `/perception/points`
+   - `/perception/points_ground`
+   - `/perception/points_obstacles`
+
+## Repository layout
+
+```text
+.
+├── docker-compose.yml
+├── px4-sitl.Dockerfile
+├── worlds/perception_world.sdf
+├── ros2_ws/src/perception_msgs/
+├── ros2_ws/src/yolo_detector/
+├── ros2_ws/src/depth_perception/
+├── docs/
+└── media/
+    ├── setup/
+    ├── aufgabe1/
+    └── aufgabe2/
 ```
 
-### 2. Run the Container
+## Environment
 
-```bash
-# Interactive mode (recommended)
-docker-compose up
+- PX4 SITL
+- Gazebo Harmonic
+- ROS 2 Jazzy
+- MAVROS
+- `ros_gz_bridge`
+- Python ROS 2 packages in `ros2_ws`
 
-# Or detached mode
-docker-compose up -d
-docker attach px4_sitl
-```
-
-### 3. Access the GUI
-
-You can access GUI applications in different ways depending on your operating system:
-
-#### macOS
-
-You can access the GUI via built-in **noVNC** using your browser:
-
-- Open: http://localhost:6080/vnc.html
-- Password: `1234`
-
-#### Linux
-
-You can use **X11 forwarding** by enabling the appropriate configuration in your `docker-compose.yml` file (uncomment or add the required lines).
+The container mounts both the custom world and the ROS workspace:
 
 ```yaml
-    volumes:
-      - /tmp/.X11-unix:/tmp/.X11-unix:rw
-
-    environment:
-      #- DISPLAY=:1
-      - DISPLAY=${DISPLAY}
+volumes:
+  - /tmp/.X11-unix:/tmp/.X11-unix:rw
+  - ./worlds:/root/worlds:rw
+  - ./ros2_ws:/root/ros2_ws:rw
 ```
 
-### 4. Control Interface
+The custom Gazebo world is:
 
-You can control your vehicle in simulation using different ways:
+- `worlds/perception_world.sdf`
 
-#### Connect QGroundControl (optional)
+It contains the default ground plane plus added Fuel models:
 
-This step is required only if you want to control the vehicle using a graphical user interface.
+- Pine Tree
+- Oak Tree
+- Standing Person
+- Walking Person
+- Pickup
+- Ambulance
 
-1. Install **QGroundControl** on your host machine:
-   http://qgroundcontrol.com
+## Reproduction
 
-2. Create a custom communication link with the following configuration:
-
-   * Type: UDP
-   * Port: `15871`
-   * Server: `0.0.0.0:18570`
-
-3. QGroundControl will automatically connect to:
-
-   * `udp://localhost:18570`
-
-#### Offboard mode (alternative)
-
-Alternatively, you can control the vehicle in **offboard mode**. This mode bypasses certain PX4 safety constraints in **PX4 Autopilot** when running in SITL.
-
-Run the following commands in the PX4 SITL console:
+### 1. Start the container
 
 ```bash
-param set COM_ARM_WO_GPS 1
-param set COM_RC_IN_MODE 4
-param set NAV_DLL_ACT 0
-param set NAV_RCL_ACT 0
-param set COM_OBL_ACT 0
+cd exercise08_Mateo
+docker compose up -d
 ```
 
-### 5. Run the Simulation
-
-Requires three terminals. Start each in order and wait for it to initialize before proceeding.
-
-**Terminal 1 - PX4 SITL + Gazebo**
-
-Run PX4 SITL:
+### 2. Terminal T1 - PX4 + Gazebo
 
 ```bash
 docker exec -it px4_sitl bash
+source /opt/ros/jazzy/setup.bash
+export PX4_GZ_WORLD=perception_world
 cd /root/PX4-Autopilot
-make px4_sitl gz_x500
+make px4_sitl gz_x500_depth
 ```
 
-You will see:
-- Gazebo simulation with a quadcopter
-- PX4 console showing startup messages
-- Drone ready for commands!
-
-**Terminal 2 - ROS Gazebo Bridge**
-
-Run ROS Gazebo Bridge, below is an example on how to map relevant topics of depth camera from Gazebo to ROS:
+### 3. Terminal T2 - Gazebo bridge
 
 ```bash
 docker exec -it px4_sitl bash
-ros2 run ros_gz_bridge parameter_bridge
-/world/default/model/x500_depth_0/link/camera_link/sensor/IMX214/camera_info@sensor_msgs/msg/CameraInfo@gz.msgs.CameraInfo
-/world/default/model/x500_depth_0/link/camera_link/sensor/IMX214/image@sensor_msgs/msg/Image@gz.msgs.Image
-/depth_camera@sensor_msgs/msg/Image@gz.msgs.Image
-/depth_camera/points@sensor_msgs/msg/PointCloud2@gz.msgs.PointCloudPacked
---ros-args
--r /world/default/model/x500_depth_0/link/camera_link/sensor/IMX214/camera_info:=/camera/color/camera_info
--r /world/default/model/x500_depth_0/link/camera_link/sensor/IMX214/image:=/camera/color/image
--r /depth_camera:=/camera/depth/image
--r /depth_camera/points:=/camera/depth/points
+source /opt/ros/jazzy/setup.bash
+ros2 run ros_gz_bridge parameter_bridge \
+  /world/perception_world/model/x500_depth_0/link/camera_link/sensor/IMX214/camera_info@sensor_msgs/msg/CameraInfo@gz.msgs.CameraInfo \
+  /world/perception_world/model/x500_depth_0/link/camera_link/sensor/IMX214/image@sensor_msgs/msg/Image@gz.msgs.Image \
+  /depth_camera@sensor_msgs/msg/Image@gz.msgs.Image \
+  /depth_camera/points@sensor_msgs/msg/PointCloud2@gz.msgs.PointCloudPacked \
+  --ros-args \
+  -r /world/perception_world/model/x500_depth_0/link/camera_link/sensor/IMX214/camera_info:=/camera/color/camera_info \
+  -r /world/perception_world/model/x500_depth_0/link/camera_link/sensor/IMX214/image:=/camera/color/image \
+  -r /depth_camera:=/camera/depth/image \
+  -r /depth_camera/points:=/camera/depth/points
 ```
 
-**Terminal 3 - MAVROS**
-
-Run MAVROS: 
+### 4. Terminal T3 - MAVROS
 
 ```bash
 docker exec -it px4_sitl bash
+source /opt/ros/jazzy/setup.bash
 ros2 launch mavros px4.launch fcu_url:=udp://:14540@localhost:14557
 ```
 
-### 6. Integrate a Local Workspace
+## Aufgabe 1 - YOLO object detection
 
-To test a custom module in PX4 SITL, you can mount your local development workspace into the Docker container as a bind volume. This allows live access to your host-side code from within the simulation environment.
+### Packages
 
-Add the following volume mapping to your `docker-compose.yml` file:
+- `ros2_ws/src/perception_msgs`
+- `ros2_ws/src/yolo_detector`
 
-```yaml
-    volumes:
-      - /home/user/workspace:/root/workspace
-```
+Custom messages:
 
-This binds the host directory /home/user/workspace to /root/workspace inside the container, making your module directly available to PX4 SITL without needing to rebuild the image.
+- `perception_msgs/msg/Detection.msg`
+- `perception_msgs/msg/DetectionArray.msg`
 
-## Usage Examples
+### Build and run
 
-### Start/Stop
+The YOLO node uses a Python virtual environment because `ultralytics` and the compatible NumPy version had to be isolated from the system Python.
 
-```bash
-# Start (interactive)
-docker-compose up
-
-# Start (background)
-docker-compose up -d
-
-# Stop
-docker-compose down
-
-# Restart
-docker-compose restart
-
-# View logs
-docker-compose logs -f
-```
-
-### Attach/Detach
+#### Create the virtual environment once
 
 ```bash
-# Attach to running container
-docker attach px4_sitl
-
-# Detach without stopping: Ctrl+P, Ctrl+Q
-
-# Or use exec for new shell
 docker exec -it px4_sitl bash
+apt-get update
+apt-get install -y python3.12-venv
+rm -rf /root/yolo_venv
+python3 -m venv /root/yolo_venv
+source /root/yolo_venv/bin/activate
+pip install --upgrade pip
+pip install "numpy<2" ultralytics opencv-python torch
 ```
 
-### Multiple Terminal Windows
+#### Build and launch the node
 
 ```bash
-# Start container
-docker-compose up -d
-
-# Terminal 1: Run PX4
 docker exec -it px4_sitl bash
-cd /root/PX4-Autopilot
-make px4_sitl gz_x500
-
-# Terminal 2: Monitor ROS topics
-docker exec -it px4_sitl bash
-ros2 topic list
-ros2 topic echo /mavros/altitude
-
-# Terminal 3: Build custom packages
-docker exec -it px4_sitl bash
+export PYTHONPATH=/root/yolo_venv/lib/python3.12/site-packages:$PYTHONPATH
+source /opt/ros/jazzy/setup.bash
 cd /root/ros2_ws
-colcon build
+colcon build --packages-select perception_msgs yolo_detector
+source install/setup.bash
+ros2 launch yolo_detector yolo.launch.py
 ```
 
-### Try Different Vehicles
-
-See full list of vehicles [here](https://docs.px4.io/main/en/sim_gazebo_gz/vehicles).
+#### Visualize annotated detections
 
 ```bash
-# X500 Quadcopter
-make px4_sitl gz_x500
-
-# RC Cessna
-make px4_sitl gz_rc_cessna
-
-# Ackermann Rover
-make px4_sitl gz_rover_ackermann
+docker exec -it px4_sitl bash
+export PYTHONPATH=/root/yolo_venv/lib/python3.12/site-packages:$PYTHONPATH
+source /opt/ros/jazzy/setup.bash
+source /root/ros2_ws/install/setup.bash
+ros2 run rqt_image_view rqt_image_view /perception/image_annotated
 ```
 
-## Network Ports
+### Aufgabe 1 artifacts
 
-| Port | Service |
-|------|---------|
-| 5901 | VNC server |
-| 6080 | NoVNC web interface |
-| 14550/udp | PX4 MAVLink (QGroundControl) |
-| 18570/udp | Local UDP port used when PX4 communicates inside container/VM setups |
+Available in the repository:
 
-## Acknowledgement
+- `media/aufgabe1/01_detections_rqt.png`
+  Screenshot of `rqt_image_view` showing the annotated detection stream.
 
-- [PX4 Autopilot Documentation](https://docs.px4.io/)
-- [ROS 2 Jazzy Documentation](https://docs.ros.org/en/jazzy/)
-- [Gazebo Harmonic Documentation](https://gazebosim.org/docs/harmonic/)
-- [ROS Gazebo Bridge](https://github.com/gazebosim/ros_gz/tree/ros2/ros_gz_bridge)
-- [MAVROS](https://github.com/mavlink/mavros)
-- [QGroundControl](http://qgroundcontrol.com)
-- [TigerVNC Documentation](https://tigervnc.org/)
+- `media/aufgabe1/02_gazebo_plus_detections.png`
+  Side-by-side screenshot of Gazebo and the annotated RGB output.
 
+- `docs/yolo_fps.log`
+  Logged FPS output from `/perception/fps`.
 
-**Happy Simulating!** 🚁
+Local-only bag (ignored by git):
+
+- `media/aufgabe1/bag_yolo_demo`
+
+Note:
+- I do not currently see `media/aufgabe1/03_yolo_demo.mp4` in the repository. If it exists locally but is not saved yet, it should be added as the Aufgabe 1 demo video before final submission.
+
+#### Embedded figures
+
+Detection output in `rqt_image_view`:
+
+![Aufgabe 1 detection output](media/aufgabe1/01_detections_rqt.png)
+
+Gazebo and annotated detection side-by-side:
+
+![Aufgabe 1 Gazebo plus detections](media/aufgabe1/02_gazebo_plus_detections.png)
+
+## Aufgabe 2 - Depth perception and segmentation
+
+### Package
+
+- `ros2_ws/src/depth_perception`
+
+The implementation contains:
+
+- `depth_perception/depth_node.py`
+  Converts synchronized RGB + depth images into a colored `PointCloud2`.
+
+- `depth_perception/ground_segmentation_node.py`
+  Splits the point cloud into ground and obstacle points.
+
+- `launch/depth.launch.py`
+- `rviz/depth.rviz`
+
+### Build and run
+
+```bash
+docker exec -it px4_sitl bash
+source /opt/ros/jazzy/setup.bash
+cd /root/ros2_ws
+colcon build --packages-select depth_perception
+source install/setup.bash
+ros2 launch depth_perception depth.launch.py
+```
+
+#### RViz visualization
+
+```bash
+docker exec -it px4_sitl bash
+source /opt/ros/jazzy/setup.bash
+source /root/ros2_ws/install/setup.bash
+rviz2 -d /root/ros2_ws/src/depth_perception/rviz/depth.rviz
+```
+
+### Aufgabe 2 artifacts
+
+All required screenshots are present:
+
+- `media/aufgabe2/01_points_color.png`
+  Full point-cloud visualization in RViz.
+
+- `media/aufgabe2/02_points_segmented.png`
+  Segmented ground and obstacle point clouds in RViz.
+
+- `media/aufgabe2/03_depth_demo.mp4`
+  Short demo capture of the depth / point-cloud pipeline.
+
+- `media/aufgabe2/04_rqt_graph.png`
+  ROS graph evidence for the depth pipeline.
+
+Local-only bag (ignored by git):
+
+- `media/aufgabe2/bag_depth_demo`
+
+#### Embedded figures
+
+Full point cloud:
+
+![Aufgabe 2 full point cloud](media/aufgabe2/01_points_color.png)
+
+Ground / obstacle segmentation:
+
+![Aufgabe 2 segmented point cloud](media/aufgabe2/02_points_segmented.png)
+
+ROS graph evidence:
+
+![Aufgabe 2 rqt graph](media/aufgabe2/04_rqt_graph.png)
+
+## Setup and debugging evidence
+
+The repository also contains setup and verification artifacts:
+
+- `docs/docker_ps.txt`
+- `docs/topics_phase1.txt`
+- `docs/perception_msgs.md`
+- `docs/yolo_fps.log`
+
+Setup screenshots:
+
+- `media/setup/02_gazebo_default.png`
+- `media/setup/03_topics.png`
+- `media/setup/04_world_file_created.png`
+- `media/setup/05_world_mounted.png`
+- `media/setup/06_perception_world_overview.png`
+- `media/setup/08_perception_msgs_interfaces.png`
+
+Custom world overview:
+
+![Perception world overview](media/setup/06_perception_world_overview.png)
+
+## Important notes
+
+- ROS bags are intentionally ignored in `.gitignore` because GitHub rejects these files due to size.
+- The Gazebo / `rqt_graph` GUI was unstable under the WSL/X11 setup, but the ROS nodes and topics were verified directly from the terminal as well.
+- The custom world and ROS workspace are bind-mounted into the container, so host-side file ownership mattered during development.
+
+## What is still left before final submission
+
+From the current repository state, the main remaining checks are:
+
+1. Ensure `media/aufgabe1/03_yolo_demo.mp4` exists if the assignment requires a YOLO demo video.
+2. Verify the README renders correctly on GitHub after push.
+3. Push only source code, docs, screenshots, and small videos. Do not push bags.
+4. Submit the GitHub URL on ILIAS.
