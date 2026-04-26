@@ -11,14 +11,19 @@ services:
     stdin_open: true
     tty: true
     
-    # volumes:
-      # - /tmp/.X11-unix:/tmp/.X11-unix:rw
-      # - /home/user/workspace:/root/workspace
+    volumes:
+      - ./ros2_ws:/root/ros2_ws:rw
+      - ./worlds:/root/worlds:rw
+      - ./scripts:/root/scripts:rw
+      - ./worlds/obstacle_course.sdf:/root/PX4-Autopilot/Tools/simulation/gz/worlds/obstacle_course.sdf:ro
+      - ./docs:/root/docs:rw
+      - ./media:/root/media:rw
 
     environment:
       - DISPLAY=:1
       # - DISPLAY=${DISPLAY}
       # - PX4_GZ_WORLD=default
+      - GZ_SIM_RESOURCE_PATH=/root/worlds:/root/PX4-Autopilot/Tools/simulation/gz/worlds:/root/PX4-Autopilot/Tools/simulation/gz/models
 
     ports:
       - "5901:5901"

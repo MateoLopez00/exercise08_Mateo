@@ -1,0 +1,28 @@
+apf_planner_node:
+  ros__parameters:
+    goal: [8.0, 0.0, 2.5]
+    k_att: 0.8
+    k_rep: 1.8
+    obstacle_influence_radius: 3.0
+    safety_radius: 0.9
+    max_speed: 1.0
+    vertical_speed_limit: 0.5
+    goal_tolerance: 0.6
+    control_rate: 20.0
+    pointcloud_topic: "/camera/depth/points"
+    pose_topic: "/mavros/local_position/pose"
+    cmd_vel_topic: "/mavros/setpoint_velocity/cmd_vel_unstamped"
+    marker_topic: "/uav_local_planner/markers"
+    max_points: 800
+    min_obstacle_height: -1.0
+    max_obstacle_height: 2.0
+    command_timeout_sec: 1.0
+    world_frame: "map"
+
+metrics_node:
+  ros__parameters:
+    goal: [8.0, 0.0, 2.5]
+    goal_tolerance: 0.6
+    pose_topic: "/mavros/local_position/pose"
+    obstacle_distance_topic: "/uav_local_planner/min_obstacle_distance"
+    output_csv: "/root/docs/results_static.csv"

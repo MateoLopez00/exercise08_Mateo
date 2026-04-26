@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <model name="tree_cylinder">
+    <static>true</static>
+    <link name="link">
+      <collision name="collision">
+        <geometry><cylinder><radius>0.22</radius><length>2.8</length></cylinder></geometry>
+      </collision>
+      <visual name="visual">
+        <geometry><cylinder><radius>0.22</radius><length>2.8</length></cylinder></geometry>
+        <material>
+          <ambient>0.35 0.2 0.08 1</ambient>
+          <diffuse>0.35 0.2 0.08 1</diffuse>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
